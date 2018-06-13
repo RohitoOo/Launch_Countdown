@@ -1,0 +1,110 @@
+body {
+  background: black;
+  text-align: center;
+}
+
+
+h1 {
+  color: white;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  font-size: 60px
+}
+h3 {
+  color: white;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  font-size: 30px
+}
+h5 {
+  color: white;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  font-size: 15px
+}
+
+#countdown {
+  width: 700px;
+  margin: 15% auto;
+}
+
+#clock span {
+  float: left;
+  font-size: 30px;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: 20%x;
+  margin: 20px
+}
+
+#clock {
+  margin: auto 20%;
+  width: 500px;
+  color: white;
+  font-size: 100px;
+}
+
+#units {
+  margin: auto auto;
+  width: 400px;
+  padding: 10px;
+  position: relative;
+  left: 20px
+}
+
+
+#clock span:nth-child(1) {
+
+  background: orange;
+}
+
+#clock span:nth-child(2) {
+
+  background: red;
+}
+
+#clock span:nth-child(3) {
+
+  background: green;
+}
+
+#clock span:nth-child(4) {
+
+  background: blue;
+}
+
+
+
+
+#clock:after {
+
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#units span {
+
+  color: white;
+  float: left;
+  font-size: 20px;
+  width: 12%;
+  margin: 20px 15px;
+  padding: 4px;
+  padding-top: 20px
+}
+
+
+@keyframes turn {
+
+
+  100% {
+    transform: rotateX(360deg)
+  }
+}
+
+span.turn {
+  animation: turn .7s ease forwards
+}
